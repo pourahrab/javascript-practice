@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            .rotate
+            {
+                transform: translate(-50%,-50%);
+                transform: rotate(45deg) !important ;
+            }   
+            .circle
+            {
+               transform: translate(-50%,-50%);
+               border-radius: 50%!important ;   
+            }
+            .scale
+            {
+                transform: translate(-50%,-50%)
+                scale(1.5)  ;  
+            }
+            #box
+            {
+                height: 200px;
+                width: 200px;
+                background-color: blueviolet;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                transition: 1s;
+            }
+    
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <button id="btn">click</button>
+
+
+    <script>
+                
+            var clases = ["rotate","circle","scale"] 
+
+            var doclasses = function()
+            {
+                var rand = Math.floor(Math.random()*4);
+
+                document.getElementById("box").className=clases[rand];
+
+                console.log(rand);
+            }
+       
+            document.getElementById("btn").onclick=function()
+            {
+                doclasses();
+            }
+
+
+
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+       
+       html
+       {
+            height:100% ;
+            width: 100% ;
+
+       }
+        body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100% ;
+            width: 100% ;
+            background-color: lightgray;
+            
+          
+           
+        }
+        .fUl
+        {
+            
+           display: flex; 
+           position:  relative;        
+           padding-top: 3.4em;
+           width: 1.6em;         
+           justify-content: center;
+           align-items: center;  
+           background-color: white;
+           border-radius: 7%;
+           font-size: 10vw;
+           flex-direction: column;
+       
+        }
+        .SUl
+        {
+           display: flex;
+           position: absolute;           
+           height: 0.05em;
+           width: 0.3em;  
+           top: 0.10em;          
+           background-color: rgb(19, 18, 18);
+           border-radius: 0.1 em;
+           z-index: 1;
+       
+        }
+        .ThUl
+        {
+           display: flex;
+           position: absolute;           
+           height: 2.5em;
+           width: 1.5em;  
+           top: 0.3em; 
+           justify-content: center;
+           /* left: 0.04em;        */
+           background-color: rgb(0, 0, 0);
+
+       
+        }
+        .FoUl
+        {
+           display: flex;
+           position: absolute;           
+           padding-top: 0.3em;
+           width: 0.3em;     
+           /*left: 0.7em; */
+           top: 2.9em;    
+           align-items: center;      
+           background-color: rgb(255, 253, 253);
+           border-radius: 0.05em;
+           z-index: 1;
+           border: solid 0.01em orange;
+           
+  
+        }
+        .triangle {
+            display: flex;
+            width: 8em;
+            height:12em;
+            position: absolute;
+            top: 40.8em;
+            left: 38em;
+            clip: rect(auto, 16em, auto, 1em);
+            transform: rotate(180deg);
+            z-index: -1;
+            font-size: 1vw;
+            
+     
+}
+        .triangle::after 
+        {
+            content: "";
+            position: absolute;
+            top: -0.099em;
+            bottom: 0.05em;
+            left: 0.09em;
+            right:0.09em;
+            background-image:linear-gradient(to top , lightgray, rgb(129, 126, 126) , rgb(99, 95, 95));
+            transform: rotate(-45deg); 
+                            
+         }
+         
+           
+        
+    </style>
+</head>
+<body>
+        
+    <div class="triangle"></div>
+     <div class="fUl"><b></b>
+        <div class="SUl"></div>
+        <div class="ThUl"></div>
+        <div class="FoUl"></div>
+
+     </div>
+</body>
+</html>

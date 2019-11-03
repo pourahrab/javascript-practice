@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style >
+        html,body{
+            width: 100% ;
+            height: 100%;
+        }
+         .DropDown{
+            position: relative;
+            display: inline-block; 
+            width: 100%;
+            height:5% ;
+            background: #636363;                        
+        }
+
+        
+
+        .DropBtn
+        {   
+            
+            margin: 0.6% 0% 0% 0.5%;
+            width: 5%;
+            background-color: pink;
+            color: rgb(0, 25, 253) ;
+            padding: 1% ;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 80%;
+           
+            -webkit-transition-duration: 1s; /* Safari */
+            transition-duration: 5s;
+            
+        }
+
+       .DropBtn:hover
+       {
+        box-shadow: 10px 22px 26px 0 rgba(136, 15, 216, 0.973),
+                                0 17px 50px 0 rgba(135, 30, 156, 0.19);
+       }
+
+        .DropDown-Content{
+            margin-inline-start: 6%;
+            margin-block-start: -0.5%;
+            display: none;
+            position: absolute;
+            background-color: #c9bcbc;
+            padding-right: 3%;
+            padding-left: 1%;
+            min-width: auto; 
+            box-shadow: 0px 8px 16px 0px rgba(174, 93, 228, 0.973);
+            z-index: 1;
+            decoration: none;
+            list-style: none; 
+            list-style-position: inside;
+            
+        }
+        .DropDown-Content1{
+            margin-inline-start: 90%;
+            margin-block-start: -1%;
+            display: none;
+            position: absolute;
+            background-color: #c9bcbc;
+            padding-right: 3%;
+            padding-left: 1%;
+            min-width: auto; 
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            decoration: none;
+            list-style: none; 
+            transition-duration: 5s;
+            border-width: 40px 5px 60px 5px;
+        }
+        .DropDown-Content2{
+            margin-inline-start: 99%;
+            margin-block-start: -1%;
+            display: none;
+            position: absolute;
+            background-color: #c9bcbc;
+            padding-right: 3%;
+            padding-left: 1%;
+            min-width: 200%; 
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            decoration: none;
+            list-style: none; 
+            transition-duration: 5s;
+        }
+        .DropDown-Content3{
+            margin-inline-start: 99%;
+            margin-block-start: -1%;
+            display: none;
+            position: absolute;
+            background-color: #c9bcbc;
+            padding-right: 3%;
+            padding-left: 1%;
+            min-width: 200%; 
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            decoration: none;
+            list-style: none; 
+            transition-duration: 5s;
+        }
+       .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            
+        }     
+        .DropDown:hover .DropBtn {background-color: #bd54ee ;}
+        .DropDown:hover .DropBtn {color: #ddf503 ;}
+
+        .DropBtn:hover .DropDown-Content {display: block; }
+        .DropDown-Content:hover .DropDown-Content1 {display: block;  }
+
+        .DropDown-Content1:hover .DropDown-Content2 {display: block; color: #ddf503; }
+        .DropDown-Content2:hover .DropDown-Content3 {display: block; color: palevioletred; }
+
+        .DropDown-Content> li:hover  {color: rgb(19, 230, 29) ;}
+       
+        .DropDown-Content1> li:hover  {color: rgb(170, 2, 2) ;}
+
+        .DropDown-Content2> li:hover {color: rgb(149, 50, 206) ;}
+
+        .dropdown-content a:hover {background-color: rgb(245, 4, 4);}
+    </style> 
+
+</head>
+<body>
+             
+        <div class="DropDown ">
+                <div class="DropBtn"><b>Menu</b> 
+                   
+                    <ul class="DropDown-Content">                                                  
+                        <li ><b>Products</b> 
+                            <ul class="DropDown-Content1">
+                                <li>
+                                   <b> Luxury </b>
+                                   <ul class="DropDown-Content2">
+                                        <li>
+                                           <b> Suv </b>
+                                           <ul class="DropDown-Content3">
+                                                <a href="#" style="text-decoration:none;">Info</a>
+                                                <br>
+                                                <a href="#" style="text-decoration:none;">Catalog</a>
+                                                <br>
+                                                <a href="#" style="text-decoration:none;">Price</a>
+                                           </ul>
+                                        </li>
+                                        <br>
+                                        <li>
+                                            <b> Sedan </b>
+                                         </li>
+                                         <br>
+                                         <li>
+                                            <b> Cross-Over </b>
+                                         </li>
+                                        <br>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    <b>
+                                        Sport
+                                    </b>
+                                </li>
+                                <br>
+                                <li>
+                                    <b>
+                                        Eco
+                                    </b>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <br>
+                        <li ><b>About Me</b></li>
+                        <br>
+                        <li ><b>Contact</b></li>
+                       
+                    
+                    </ul>
+                </div>                                   
+        </div>
+       
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <style>
+
+            *,*::before,*::after{
+                
+                box-sizing: border-box ;
+                -webkit-box-sizing:border-box;
+                -moz-box-sizing:border-box;
+                -o-box-sizing:border-box;
+                -ms-box-sizing:border-box;
+                margin: 0;
+                padding: 0;
+            }
+                body 
+                {
+                        background-color: rgb(213, 218, 223);
+                      }
+
+                      #Parent::before {
+                        margin:129% 0% 0% -43%;
+                         position: absolute;
+                         content: "";
+                         border-radius: 0% 0 0 0;
+                         display: block;
+                         width: 100%;
+                         height: 50%  ;
+                         background-color: #a9adac;
+                         opacity: .4;
+                         -webkit-transition: rotateX(-75deg) rotateZ(50deg) ;
+                         -moz-transition:rotateX(-75deg) rotateZ(50deg) ;
+                         -o-transition:rotateX(-75deg) rotateZ(50deg) ;
+                         -ms-transition:rotateX(-75deg) rotateZ(50deg) ;
+                          transform:rotateX(-75deg) rotateZ(50deg) ;
+                         
+                        
+                          background-image: linear-gradient(to  right, rgb(211, 217, 221), rgba(131, 128, 128, 0.473), rgba(92, 90, 90, 0.205), rgba(46, 43, 43, 0)); 
+                         
+                          text-shadow: 20% 20% 30% red;
+                          
+                          
+
+
+                         
+                         }
+
+                      #Parent
+                         {
+                             
+                        
+                             margin:50%;
+                             position: relative;
+                             padding : 0px ;                                                                     
+                             border-radius: 30px;
+                             height : 500px ;
+                             width : 250px;   
+                             background-color: rgb(231, 224, 224);    
+                             border-width: 40px 5px 60px 5px;
+                             text-shadow: 20% 20% 30% rgb(240, 191, 191);
+                             
+                       
+                        
+                        }
+         
+                   
+                    
+                         #Parent1
+                    {
+                        
+                        margin:0%;
+                        position: relative;
+                        padding : 0px ;                                                                     
+                        border-radius: 30px;
+                        height : 500px;
+                        width : 250px;   
+                        background-color: rgb(255, 254, 254);    
+                        border-width: 40px 5px 60px 5px;
+                        
+                       
+                        
+                    }
+                    #Child1
+                    {
+                        margin:10% 43% 0% 43%;
+                        
+                        position: absolute;
+                        
+                        background : rgb(70, 67, 67);
+                        border: 0% solid rgb(223, 223, 231);                       
+                        border-radius: 10px;
+                        height : 1%;
+                        width : 15%;   
+                        background-color: rgb(17, 17, 17);    
+                        border-width: 10px 5px 10px 5px;
+                    }
+                    #Child2
+                    {
+                        margin:20% 0% 50% 5%;
+                        
+                        position: absolute;
+                        padding : 0px ;                                                                     
+                        
+                        height : 80%;
+                        width : 90%;   
+                        background-color: rgb(17, 16, 16);    
+                        border-width: 40px 5px 60px 5px;
+                    }
+                    #Child3
+                    {
+                        margin:183% 43% 7% 43%;
+                        
+                        position: absolute;
+                        
+                        
+                        border: 1px solid rgb(255, 69, 1);                       
+                        border-radius: 5px;
+                        height : 6%;
+                        width : 14%;   
+                        background-color: rgb(252, 250, 251);    
+                        /*border-width: 10px 5px 10px 5px;*/
+                    }
+
+                    </style>
+</head>
+<body>
+        
+        <div id="Parent" class = "text-shadow">
+            <div id="Parent1"  >
+                <div id="Child1"></div>
+                <div id="Child2"></div>
+                <div id="Child3"></div>
+            </div>
+        </div>
+                
+</body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drop Down Practice</title>
+    <style>
+        html,body
+        {
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-image: url("end-of-college.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+      
+        }
+        .NavBar
+        {                         
+            display: flex; 
+            /* position: fixed; */
+            height: 100%;
+            width: 230px;
+            justify-content:flex-start;
+            size: 10%;
+            flex-direction: column;
+            padding: 27px 0px 0px 0px ;          
+            background: whitesmoke; 
+            margin-inline-start: -0.5%; 
+            margin-block-start: -1%;     
+            
+        }
+        .Menu 
+        {    position: relative;       
+            width:200px;
+            height: 5%;
+            background-color: whitesmoke;
+            color: rgb(104, 97, 97) ;
+            padding: 5px 0px 1px 30px;
+            /* border-right: solid 0.3vw  rgb(150, 144, 144);
+            border-left: solid 0.3vw  rgb(150, 144, 144);
+            border-bottom: solid 0.3vw  rgb(150, 144, 144); */
+             font-size: 95%; 
+             
+             
+        }
+      
+        
+        #Course
+        {
+            /* border-top: solid 0.3vw  rgb(150, 144, 144); */
+         
+     
+           
+        }
+        #Contact
+        {
+           
+        }
+        #Result
+        {
+           
+        }
+        #SubCorses
+        {
+
+        }
+        
+        .Menu:hover
+       {
+           z-index: 1;
+        /* box-shadow: 10px 22px 26px 0 rgba(185, 182, 187, 0.973),
+                                0 17px 50px 0 rgba(99, 92, 100, 0.19); */
+        color: rgb(235, 32, 32);    
+        background-color: rgb(182, 174, 174);     
+        
+               
+       }
+        .FirstlvlMenu
+        {
+            margin: 1% 0% 0% 100px;
+            display: none;
+            position: absolute;
+            left: 57%; 
+            top: 0%;          
+            background-color:whitesmoke;
+            color: rgb(104, 97, 97);
+            
+            padding-left: 20px; 
+            /* padding-right: 5px; */
+            min-width:110px; 
+            box-shadow: 0px 8px 16px 0px rgba(130, 129, 131, 0.973);
+            list-style: none; 
+            font-size: 75%; 
+            padding-bottom: 1%; 
+        }
+        .FirstlvlMenu:hover
+        {
+            box-shadow: 10px 22px 26px 0 rgba(185, 182, 187, 0.973),
+                                0 17px 50px 0 rgba(99, 92, 100, 0.19);    
+                                                                     
+        }
+     
+        .shapalotga
+        {
+            padding: 1%;
+            text-align: left  ;    
+        }
+        .SecondlvlMenu-Property
+        {
+            margin-top: -8%;
+           color: rgb(104, 97, 97);
+            
+            padding: 20% 10% 10% 0%;
+            text-align: left;
+            width: 100%
+    
+        }
+        .SecondlvlMenu
+        {    
+            display: none;
+            position: absolute; 
+            top: 0.7%;
+            left: 100%;
+            background-color: whitesmoke;
+            color: black;
+            padding-left: 30px; 
+            padding-right: 1vw;
+            padding-bottom: 10%;  
+            min-width:50px; 
+            box-shadow: 0px 8px 16px 0px rgba(130, 129, 131, 0.973);
+            list-style: none;           
+            font-size: 90%;          
+            text-align: left;
+            width: 70%;                      
+        }
+        .SecondlvlMenu:hover
+        { box-shadow: 10px 22px 26px 0 rgba(185, 182, 187, 0.973),
+                                0 17px 50px 0 rgba(99, 92, 100, 0.19);    }
+        .shapalotga:hover
+        {
+            color: rgb(235, 32, 32);    
+        background-color: rgb(182, 174, 174); 
+         
+        }
+        a{color: rgb(104, 97, 97) ;}
+        a:hover{color: red;}
+        .NavBar:hover .Menu {display:block;}  
+        .Menu:hover .FirstlvlMenu  {display:block; }
+        .shapalotga:hover .SecondlvlMenu  {display:block;} 
+
+    </style>
+</head>
+<body>
+       <div class = " NavBar ">
+            <div class="Menu" ><b>Courses</b> <span style="display:inline-block; width: 115px;" ></span>►  
+                <ul class="FirstlvlMenu" id="Course"> 
+                        <br>
+                    <li class="shapalotga" >
+                        <b>
+                         Engineering  <span style="display:inline-block; width: 23px;" ></span> ►
+                         <ul class="SecondlvlMenu">
+                             <br>
+                             <li class="SecondlvlMenu-Property">
+                                 <a>
+                                 <b>
+                                     Electrical-Enginnering
+                                 </b>
+                                </a>
+                             </li>
+                             <br>
+                             <li class="SecondlvlMenu-Property">
+                                <a>
+                                 <b>
+                                     Software-Development
+                                 </b>
+                                </a>
+                             </li>
+                             <br>
+                             <li class="SecondlvlMenu-Property">
+                                <a>
+                                 <b>
+                                     Hardware-Enginnering
+                                 </b>
+                                </a>
+                             </li>
+
+                         </ul>  
+                        </b>
+                    </li>
+                    <br>
+                    <li class="shapalotga">
+                        <b>
+                             Art <span style="display:inline-block; width: 73px;"  ></span>  ► 
+                             <ul class="SecondlvlMenu">
+                                    <br>
+                                    <li class="SecondlvlMenu-Property">
+                                        <a>
+                                        <b>
+                                            Painting
+                                        </b>
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li class="SecondlvlMenu-Property">
+                                        <a>
+                                        <b>
+                                            Acting
+                                        </b>
+                                    </a>
+                                    </li>
+                                    <br>
+                                    <li class="SecondlvlMenu-Property">
+                                        <a>
+                                        <b>
+                                            Dramaturgy
+                                        </b>
+                                    </a>
+                                    </li>
+                                    <br>
+                                    <li class="SecondlvlMenu-Property">
+                                        <a>
+                                            <b>
+                                                Film Making
+                                            </b>
+                                        </a>
+                                        </li>
+
+       
+                                </ul>  
+                        </b>
+                    </li>
+                    <br>
+                    <li class="shapalotga">
+                        <b>
+                            Health  <span style="display:inline-block; width: 55px;" ></span> ►
+                            <ul class="SecondlvlMenu">
+                                    <br>
+                                    <li class="SecondlvlMenu-Property">
+                                        <a>
+                                        <b>
+                                            Aged Care
+                                        </b>
+                                    </a>
+                                    </li>
+                                    <br>
+                                    <li class="SecondlvlMenu-Property">
+                                        <a>
+                                        <b>
+                                            Skin Care
+                                        </b>
+                                    </a>
+                                    </li>
+                                    <br>
+                                    <li class="SecondlvlMenu-Property">
+                                        <a>
+                                        <b>
+                                                Allergies
+                                        </b>
+                                    </a>
+                                    </li>
+                                    <br>
+                                    <li class="SecondlvlMenu-Property">
+                                        <a>
+                                        <b>
+                                                Eye Health
+                                        </b>
+                                    </a>
+                                    </li>
+       
+                                </ul>  
+                        </b>
+                    </li>
+                </ul>
+            </div> 
+            
+            <div class = "Menu"><b>Result </b><span style="display:inline-block; width: 130px;" ></span>►  
+                <ul class="FirstlvlMenu"  id="Result"> 
+                           <br>
+                        <li class="shapalotga">
+                            <b>
+                                Year Result <span style="display:inline-block; width: 23px;" ></span> ►
+                                <ul class="SecondlvlMenu">
+                                        <br>
+                                        <li class="SecondlvlMenu-Property">
+                                            <a>
+                                            <b>
+                                                Top Students
+                                            </b>
+                                        </a>
+                                        </li>
+                                        <br>
+                                        <li class="SecondlvlMenu-Property">
+                                            <a>
+                                            <b>
+                                                Submited Result
+                                            </b>
+                                        </a>
+                                        </li>
+                                        <br>
+                                        <li class="SecondlvlMenu-Property">
+                                            <a>
+                                            <b>
+                                                    Pending
+                                            </b>
+                                        </a>
+                                        </li>
+                                        <br>
+                                        <li class="SecondlvlMenu-Property">
+                                            <a>
+                                            <b>
+                                                   Report
+                                            </b>
+                                        </a>
+                                        </li>
+           
+                                    </ul>  
+                            </b>
+                        </li>
+                        <br>
+                        <li class="shapalotga">
+                            <b>
+                                 Semester Result ►
+                                 <ul class="SecondlvlMenu">
+                                        <br>
+                                        <li class="SecondlvlMenu-Property">
+                                                <a>
+                                                <b>
+                                                    Top Students
+                                                </b>
+                                            </a>
+                                            </li>
+                                            <br>
+                                            <li class="SecondlvlMenu-Property">
+                                                <a>
+                                                <b>
+                                                    Submited Result
+                                                </b>
+                                            </a>
+                                            </li>
+                                            <br>
+                                            <li class="SecondlvlMenu-Property">
+                                                <a>
+                                                <b>
+                                                        Pending
+                                                </b>
+                                            </a>
+                                            </li>
+                                            <br>
+                                            <li class="SecondlvlMenu-Property">
+                                                <a>
+                                                <b>
+                                                       Report
+                                                </b>
+                                            </a>
+                                            </li>
+           
+                                    </ul>  
+                            </b>
+                        </li>
+                        <br>
+                        <li class="shapalotga">
+                            <b>
+                                Test Result <span style="display:inline-block; width: 26px;" ></span> ►
+                                <ul class="SecondlvlMenu">
+                                        <br>
+                                        <li class="SecondlvlMenu-Property">
+                                                <a>
+                                                <b>
+                                                    Top Students
+                                                </b>
+                                            </a>
+                                            </li>
+                                            <br>
+                                            <li class="SecondlvlMenu-Property">
+                                                <a>
+                                                <b>
+                                                    Submited Result
+                                                </b>
+                                            </a>
+                                            </li>
+                                            <br>
+                                            <li class="SecondlvlMenu-Property">
+                                                <a>
+                                                <b>
+                                                        Pending
+                                                </b>
+                                            </a>
+                                            </li>
+                                            <br>
+                                            <li class="SecondlvlMenu-Property">
+                                                <a>
+                                                <b>
+                                                       Report
+                                                </b>
+                                            </a>
+                                            </li>
+           
+                                    </ul>  
+                            </b>
+                        </li>
+                    </ul>
+            </div> 
+            <div class = "Menu"><b> About Us</b>
+                   
+            </div>
+            <div class = "Menu" ><b> Contact Us</b>
+                   
+            </div>  
+       </div>
+</body>
+</html>
